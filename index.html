@@ -1,0 +1,15 @@
+<div class="container">
+    <div class="row">
+      <form method="post" class="offset-md-2 col-md-8" enctype="multipart/form-data">
+        <div class="my-2">
+          <input type="file" class="form-control" id="images" name="images[]" onchange="preview_images();" multiple/>
+        </div>
+        <div>
+          <input onclick="upload_files()" type="button" class="btn btn-primary" name='submit_image' value="Upload Multiple Image"/>
+          <input onclick="return resetForm();" type="reset" class="btn btn-danger" name='reset_images' value="Reset"/>
+        </div>
+      </form>
+    </div>
+    <hr>
+    <div class="row" id="image_preview"></div>
+  </div>
